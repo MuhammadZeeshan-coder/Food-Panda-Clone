@@ -24,8 +24,13 @@ div.bg{
     background-image: url(https://pandaads.foodpanda.com/wp-content/uploads/2024/05/foodpanda-panda-ads.webp);
     height: 450px;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+div.bg-text{
+    position: absolute;
 }
 div.bg h1{
     font-size: 60px;
@@ -45,3 +50,51 @@ a.nav-link{
     font-family: sans-serif ;
 }
 /* section 01 */
+h2.semi-heading{
+    font-size: 45px;
+    color: #000;
+    font-family: roboto;
+    font-weight: 700;
+}
+p.number{
+    font-size: 55px;
+    font-weight: 700;
+    color: #000;
+}
+p.alphabet{
+    color: #000;
+    font-size: 20px;
+}
+/* section 02 */
+section.gray{
+    background-color: #e5e7eb;
+}
+div.images{
+    width: 90px;
+}
+div.r{ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h5.sec-2-h5{
+    font-weight: 700;
+    color: #000;
+}
+button.about{
+    background-color: rgb(238, 44, 130);
+    border: none;
+}
+/* footer */
+div.ft-1 a{
+    color: #fff;
+    text-decoration: none;
+    transition: .2s;
+}
+div.ft-1 i:hover{
+    color: gray;
+}
+a.active{
+    border-top: 2px solid  rgb(238, 44, 130);
+}
