@@ -56,10 +56,12 @@ div.ft-1 a{
 div.ft-1 i:hover{
     color: gray;
 }
-li.active{
+a.active{
     border-top: 2px solid  rgb(238, 44, 130);
 }
-
+ul.navbar-nav{
+    font-family: sans-serif;
+}
 /* about page */
 div.bg{
     width: 100%;

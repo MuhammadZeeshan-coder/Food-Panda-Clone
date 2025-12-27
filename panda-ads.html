@@ -23,32 +23,68 @@
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap"
         rel="stylesheet">
 </head>
+<style>
+    .navbar-toggler {
+        border-color: green;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='green' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+</style>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between">
-        <div class="container-fluid d-flex ">
-            <div class="d-flex justify-content-start">
-                <a class="navbar-brand px-5" href="#"><img src="./assets/panda ads/logo.png" alt="" class="img-fluid"
-                        width="150"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse d-flex justify-content-end navbar-outer" id="navbarNavAltMarkup">
-                <div class="navbar-nav d-flex gap-2 px-5 fw-bold">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Solution</a>
-                    <a class="nav-link" href="#">Resources</a>
-                    <a class="nav-link" href="#">Tools</a>
-                    <button class="btn-nav rounded-5"><a href="">Contact Us</a></button>
-                    <a class="nav-link" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+    <!--Navbar Start-->
+    <nav class="navbar bg-body-tertiary sticky-top navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><img src="./assets/home/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/home/logo.png" alt=""></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center fw-semibold">
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">Solution</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Resourses
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Insights</a></li>
+                                <li><a class="dropdown-item" href="#">Case studies</a></li>
+                                <li><a class="dropdown-item" href="#">Newsroom</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tools
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Media kit generator</a></li>
+                                <li><a class="dropdown-item" href="#">Markrter personality quiz</a></li>
+                            </ul>
+                        </li>
+                        <button class="px-3 py-2 rounded-5 about text-white fw-bold ms-2 btn-nav">Contact US</button>
+                    </ul>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="bg text-white d-flex align-items-center ">
+    <!-- navbar end -->
+    <div class="bg text-white d-flex align-items-center container-fluid  ">
         <div class="bg-text container">
             <h1>
                 Reach millions <br>
@@ -129,7 +165,7 @@
         </div>
     </section>
     <!-- section 03 -->
-     <section class="container mt-5">
+    <section class="container mt-5">
         <div class="row text-center">
             <div class="col-12">
                 <h2 class="semi-heading">Customised retail media advertising <br>solutions for your brand’s needs</h2>
@@ -137,65 +173,80 @@
         </div>
         <!-- Row 01 -->
         <div class="row d-flex justify-content-around align-items-center mt-5">
-                <div class="col-6 img">
-                    <img src="./assets/panda ads/sec-3-1.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <h3 class="text-black fw-bold">
-                        In-app advertising
-                    </h3>
-                    <p class="fs-6 mt-1">
-                       Increase brand visibility with native display ads across different categories on the foodpanda app
-                    </p>
-                    <button class="px-4 py-2 rounded-5 about text-white fw-bold mt-3">Explore solutions</button>
+            <div class="col-6 img">
+                <img src="./assets/panda ads/sec-3-1.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <h3 class="text-black fw-bold">
+                    In-app advertising
+                </h3>
+                <p class="fs-6 mt-1">
+                    Increase brand visibility with native display ads across different categories on the foodpanda app
+                </p>
+                <button class="px-4 py-2 rounded-5 about text-white fw-bold mt-3">Explore solutions</button>
+            </div>
+        </div>
+        <!-- Row 02 -->
+        <div class="row d-flex justify-content-around align-items-center mt-5">
+            <div class="col-lg-6 col-md-12">
+                <h3 class="text-black fw-bold">
+                    Off-app advertising
+                </h3>
+                <p class="fs-6 mt-1 pe-5">
+                    Amplify your campaigns with foodpanda, from email marketing and social media to rider bag ads and
+                    product sampling
+                </p>
+                <button class="px-4 py-2 rounded-5 about text-white fw-bold mt-3">Explore solutions</button>
+            </div>
+            <div class="col-6 img">
+                <img src="./assets/panda ads/sec-3-2.png" class="img-fluid" alt="">
+            </div>
+        </div>
+        <!-- Row 03 -->
+        <div class="row d-flex justify-content-around align-items-center mt-5">
+            <div class="col-6 img">
+                <img src="./assets/panda ads/sec-3-3.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <h3 class="text-black fw-bold">
+                    Strategic partnerships
+                </h3>
+                <p class="fs-6 mt-1">
+                    Execute integrated campaigns for maximum impact, with tailored solutions like vouchers, data
+                    partnerships and consumer insights
+                </p>
+                <button class="px-4 py-2 rounded-5 about text-white fw-bold mt-3">Explore solutions</button>
+            </div>
+        </div>
+        <!-- Row 04 -->
+        <div class="row d-flex justify-content-around align-items-center mt-5">
+            <div class="col-lg-6 col-md-12">
+                <h3 class="text-black fw-bold">
+                    Go beyond basic targeting with panda ads
+                </h3>
+                <p class="fs-6 mt-1 pe-5">
+                    Maximise your ROI and connect with a broader, more relevant audience through precise targeting
+                    powered by our first-party data.
+                </p>
+                <button class="px-4 py-2 rounded-5 about text-white fw-bold mt-3">Explore solutions</button>
+            </div>
+            <div class="col-6 img">
+                <img src="./assets/panda ads/sec-3-4.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </section>
+    <!--Section 04-->
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="semi-heading">
+                        Proven impact with panda ads
+                    </h2>
                 </div>
             </div>
-           <!-- Row 02 -->
-            <div class="row d-flex justify-content-around align-items-center mt-5">
-                <div class="col-lg-6 col-md-12">
-                    <h3 class="text-black fw-bold">
-                        Off-app advertising
-                    </h3>
-                    <p class="fs-6 mt-1 pe-5">
-                      Amplify your campaigns with foodpanda, from email marketing and social media to rider bag ads and product sampling
-                    </p>
-                    <button class="px-4 py-2 rounded-5 about text-white fw-bold mt-3">Explore solutions</button>
-                </div>
-                <div class="col-6 img">
-                    <img src="./assets/panda ads/sec-3-2.png" class="img-fluid" alt="">
-                </div>
-            </div>
-           <!-- Row 03 -->
-            <div class="row d-flex justify-content-around align-items-center mt-5">
-                <div class="col-6 img">
-                    <img src="./assets/panda ads/sec-3-3.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <h3 class="text-black fw-bold">
-                        Strategic partnerships 
-                    </h3>
-                    <p class="fs-6 mt-1">
-                       Execute integrated campaigns for maximum impact, with tailored solutions like vouchers, data partnerships and consumer insights
-                    </p>
-                    <button class="px-4 py-2 rounded-5 about text-white fw-bold mt-3">Explore solutions</button>
-                </div>
-            </div>
-            <!-- Row 04 -->
-            <div class="row d-flex justify-content-around align-items-center mt-5">
-                <div class="col-lg-6 col-md-12">
-                    <h3 class="text-black fw-bold">
-                        Go beyond basic targeting with panda ads
-                    </h3>
-                    <p class="fs-6 mt-1 pe-5">
-                     Maximise your ROI and connect with a broader, more relevant audience through precise targeting powered by our first-party data.
-                    </p>
-                    <button class="px-4 py-2 rounded-5 about text-white fw-bold mt-3">Explore solutions</button>
-                </div>
-                <div class="col-6 img">
-                    <img src="./assets/panda ads/sec-3-4.png" class="img-fluid" alt="">
-                </div>
-            </div>
-     </section>
+        </div>
+    </section>
     <!-- footer -->
     <footer class="container-fluid bg-black mt-5 pt-5">
         <div class="container">

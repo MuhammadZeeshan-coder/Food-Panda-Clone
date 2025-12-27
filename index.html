@@ -14,6 +14,7 @@
         rel="stylesheet">
     <!-- External style sheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -25,9 +26,10 @@
 </head>
 
 <body>
-    <nav class="navbar bg-white fixed-top navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./assets/home/logo.png" alt=""></a>
+    <!--Navbar Start-->
+    <nav class="navbar bg-body-tertiary sticky-top navbar-expand-lg container-fluid">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><img src="./assets/home/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,42 +37,41 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbar Label"><img src="./assets/home/logo.png" alt="">
-                    </h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/home/logo.png" alt=""></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body d-flex align-items-center">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fw-semibold ">
-                        <li class="nav-item active">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center fw-semibold">
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./about.html">About</a>
+                            <a class="nav-link" href="./about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./newsroom.html">Newsroom</a>
+                            <a class="nav-link" aria-current="page" href="./newsroom.html">Newsroom</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./partner.html">Partners</a>
+                            <a class="nav-link" aria-current="page" href="./partner.html">Partner</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./panda-ads.html" target="_blank">panda ads</a>
+                            <a class="nav-link" aria-current="page" href="./panda-ads.html">Panda ads</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                            <a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Careers</a>
+                            <a class="nav-link" aria-current="page" href="./careers">Careers</a>
                         </li>
+                        <button class="px-3 py-2 rounded-5 about text-white fw-bold ms-2 btn-nav">Choose Location</button>
                     </ul>
-                    <button class="px-3 py-2 mb-2 me-2 rounded-5 about text-white fw-bold mt-3">Choose location</button>
-                    <a href="" class="mt-2 text-black"><i class="fa-solid fa-magnifying-glass"></i></a>
                 </div>
             </div>
         </div>
     </nav>
-    <header>
-        <video src="./assets/home/header.mp4" autoplay loop></video>
+    <!-- navbar end -->
+    <header class="home">
+        <!-- <video src="./assets/home/header.mp4" autoplay loop></video> -->
         <h1>food <br>and groceries <br>in a tap</h1>
     </header>
     <!-- section o1 -->

@@ -4,10 +4,20 @@
     box-sizing: border-box;
 }
 /* Navbar */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(25, 135, 84, 0.3); /* Bootstrap green */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(42%) sepia(93%) saturate(1350%) hue-rotate(85deg) brightness(95%) contrast(90%);
+}
 .fa-solid {
     padding-left: 100px;
 }
-
+a.dropdown-item:hover{
+    background-color: #e5e7eb;
+}
 .btn-nav a {
     text-decoration: none;
     color: white;
@@ -33,7 +43,6 @@ div.bg-text{
     position: absolute;
 }
 div.bg h1{
-    font-size: 60px;
     font-weight: 700;
 }
 div.bg button{

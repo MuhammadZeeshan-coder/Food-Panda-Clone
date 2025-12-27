@@ -1,0 +1,21 @@
+@media only screen and (max-width:991px) {
+    div.about{
+        text-align: center;
+        padding-right: 0;
+    }
+    button.btn-nav{
+        display: none;
+    }
+    header.home{
+        width: 100%;
+        background-color: black;
+    }
+}
+@media only screen and (max-width:767px) {
+    a.navbar-brand{
+        padding-left: 0;
+    }
+    button.btn-close{
+        padding-left: 0;
+    }
+}
