@@ -1,0 +1,143 @@
+/*section 01*/
+section.header{
+    background-color: #FFB2BB;
+}
+h1.main-heading{
+    font-family: poppins;
+    font-weight: 600;
+}
+section.header p{
+    font-size: xx-large;
+    margin-top: 9px;
+}
+input.search{
+    width: 500px;
+    margin-top: 28px;
+    border-radius: 25px;
+    border: none;
+    padding: 12px;
+}
+button.submit{
+    padding: 10px 12px;
+    border-radius: 50%;
+    background-color: #FF2B85;
+    border: none;
+    color: #fff;
+    margin-left: -55px;
+}
+/*section 02*/
+div.para-sect-two{
+    padding-right: 250px;  
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+}
+h2.semi-heading{
+    color: #FF2B85;
+    font-weight: 700;
+}
+div.button-image{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+div.button-image button{
+   background-color: #FF2B85;
+   color: #fff;
+   border: none;
+}
+div.wrap{
+    flex-wrap: wrap-reverse;
+}
+img.pic{
+    border-radius: 15px;
+}
+/*section 04*/
+div.BOX{
+    background-color: #FFB2BB;
+    border: 1px solid #fff;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+div.inner-box{
+    background-color: #fff;
+    padding:  40px 1px;
+    text-align: center;
+    height: fit-content;
+    border-radius: 12px;
+    color: #FF2B85;
+}
+/*Section 05*/
+div.card{
+    border: 1px solid  #FF2B85;
+    border-bottom: 5px solid  #FF2B85;
+    padding:0 12px;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+}
+div.card:hover{
+   transform: translateY(-5px);
+   border: 1px solid  #be1a5f;
+   border-bottom: 5px solid  #be1a5f;
+}
+div.image{
+    border: 1px solid  #FF2B85;
+    width: 100px;
+    padding: 16px 13px;
+    border-radius: 50%;
+    margin-top: -28px;
+    background-color: #fff;
+}
+div.card i{
+    color: #FF2B85;
+}
+div.card button{
+   background-color: #FF2B85;
+   color: #fff;
+   border: none;
+   align-items: center;
+}
+/*section 06*/
+div.card-sec-six{
+    border: 2px solid #FF2B85;
+    height: 500px;
+    border-radius: 15px;
+}
+div.bo-rder{
+    border-bottom: 1px solid #000;
+}
+div.bo-rder img{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+p.update{
+    font-size: 11px;
+    color: #FF2B85;
+}
+div.more{
+    padding: 12px;
+}
+div.more a{
+    text-decoration: none;
+    color: #000;
+    
+}
+div.more a:hover{
+    color: #FF2B85;
+}
+button.view{
+    background-color: #FF2B85;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+/*FOOTER*/
+footer a{
+   color: #fff;
+   text-decoration: none;
+}
+footer a:hover{
+    color: #FF2B85;
+}
