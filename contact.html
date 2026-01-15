@@ -13,7 +13,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <!-- External style sheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -74,27 +75,40 @@
         <h1>Contact Us</h1>
     </div>
     <!-- section 01 -->
-    <section class="container d-flex justify-content-around align-items-center mb-5">
-        <div class="col-lg-6 col-12">
-            <h5 class="mb-5 fs-3">Contact Form</h5>
+    <section id="contact" class="bg-light">
+    <div class="container">
+      <h2 class="text-center semi-heading">Contact Us</h2>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-8">
+          <form class="card p-4 shadow-sm">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" placeholder="Enter your name" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control" placeholder="Enter your email" required>
+              </div>
+            </div>
 
-            <span>Name *</span> <br>
-            <input type="text" name="first" placeholder="First" size="25" class="my-2" required>
-            <input type="text" name="last" placeholder="Last" size="25" class="my-2">
-            <br>
-            <span>Email * </span><br>
-            <input type="email" name="email" size="58" class="my-2" required>
-            <br>
-            <span>Your message *</span>
-            <br>
-            <textarea name="message" rows="8" cols="63" class="my-2"></textarea>
-            <br>
-            <input type="submit" class="px-5 rounded-5 text-white fw-bold bg-black py-2">
+            <div class="mb-3">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-control" placeholder="Enter subject" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="5" placeholder="Write your message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn about w-100">Send Message</button>
+          </form>
         </div>
-        <div class="col-lg-6 col-12">
-            <img src="./assets/newsroom/contact.png" alt="" width="600">
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
+
     <div class="container-fluid p-5 mt-5 text-center"  style="background-color: #e5e7eb;">
         <p>Got a question about your order? <br>
             Need help with some of your app features? <br>

@@ -6,7 +6,7 @@
 /* Navbar */
 .carousel-control-prev,
 .carousel-control-next {
-    background-color: rgba(25, 135, 84, 0.3); /* Bootstrap green */
+    background-color: rgba(255, 29, 195, 0.79); /* Bootstrap green */
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -29,41 +29,46 @@ a.dropdown-item:hover{
     width: 150px;
     border: none;
 }
+h1{
+    font-size: 44px;
+}
 /* home page. */
-div.bg{
+.bg{
     background-image: url(https://pandaads.foodpanda.com/wp-content/uploads/2024/05/foodpanda-panda-ads.webp);
     height: 450px;
-    width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 }
-div.bg-text{
+.bg-text{
     position: absolute;
 }
-div.bg h1{
+.bg h1{
     font-weight: 700;
 }
-div.bg button{
+.bg button,
+button.ad{
     color: rgb(248, 11, 129);
     font-family: sans-serif;
+    border: 0;
 }
 button:hover{
     opacity: 80%;
 }
-div.bg-text{
+.bg-text{
     margin-left: 160px;
 }
 a.nav-link{
     font-family: sans-serif ;
 }
 /* section 01 */
-h2.semi-heading{
-    font-size: 45px;
+.semi-heading{
     color: #000;
     font-family: roboto;
     font-weight: 700;
+    text-align: center;
 }
 p.number{
     font-size: 55px;
@@ -95,6 +100,25 @@ button.about{
     background-color: rgb(238, 44, 130);
     border: none;
 }
+/*section 04*/
+a.news{
+    text-decoration: none;
+    color: #000;
+    transition: .2s;
+    line-height: 30px;
+} 
+span.apac{    
+    color: #f60f9d;
+    font-weight: 700;
+}
+/*07*/
+.brands img:hover{
+    transition: .2s;
+}
+.brands img:hover{
+   transform: skew(10deg, 5deg);
+
+}
 /* footer */
 div.ft-1 a{
     color: #fff;
@@ -106,4 +130,60 @@ div.ft-1 i:hover{
 }
 a.active{
     border-top: 2px solid  rgb(238, 44, 130);
+}
+/* Default (inactive) pills */
+.nav-pills .nav-link {
+    background-color: #f60f9d;
+    color: #fff;
+    margin-right: 8px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+/* Active pill */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: transparent !important;
+    color: #f60f9d;
+    border: 2px solid #f60f9d;
+}
+
+/* Hover effect */
+.nav-pills .nav-link:hover {
+    opacity: 0.85;
+}
+
+/*insight page*/
+img.insight{
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+    margin-bottom: 20px;
+}
+/*case page*/
+.case{
+    color: #f60f9d;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+/*NEWS page*/
+header.container{
+    background-color: #e5e7eb;
+}
+a.merchant{
+    text-decoration: none;
+    color: #000;
+    transition: .2s;
+}
+a.merchant:hover{
+    color: #f60f9d;
+}
+a.news{
+    text-decoration: none;
+    color: #000;
+    transition: .2s;
+    line-height: 30px;
+} 
+span.apac{    
+    color: #f60f9d;
+    font-weight: 700;
 }

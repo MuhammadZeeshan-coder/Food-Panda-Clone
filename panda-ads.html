@@ -11,7 +11,7 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/home/favicon.png" type="image/x-icon">
     <!-- CSS link   -->
-    <link rel="stylesheet" href="ads.css">
+    <link rel="stylesheet" href="./css/ads.css">
     <!-- Font awesome link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -23,21 +23,12 @@
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap"
         rel="stylesheet">
 </head>
-<style>
-    .navbar-toggler {
-        border-color: green;
-    }
-
-    .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='green' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    }
-</style>
 
 <body>
     <!--Navbar Start-->
-    <nav class="navbar bg-body-tertiary sticky-top navbar-expand-lg">
+    <nav class="navbar bg-white sticky-top navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="./index.html"><img src="./assets/home/logo.png" alt=""></a>
+            <a class="navbar-brand" href="./index.html"><img src="./assets/panda ads/logo.png" class="img-fluid" width="150"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,10 +42,10 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center fw-semibold">
                         <li class="nav-item ">
-                            <a class="nav-link active " aria-current="page" href="#">Home</a>
+                            <a class="nav-link active " aria-current="page" href="./panda-ads.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./about.html">Solution</a>
+                            <a class="nav-link" href="./solution.html">Solution</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -62,9 +53,9 @@
                                 Resourses
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Insights</a></li>
-                                <li><a class="dropdown-item" href="#">Case studies</a></li>
-                                <li><a class="dropdown-item" href="#">Newsroom</a></li>
+                                <li><a class="dropdown-item" href="./insight.html">Insights</a></li>
+                                <li><a class="dropdown-item" href="case.html">Case studies</a></li>
+                                <li><a class="dropdown-item" href="news.html">Newsroom</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -84,7 +75,7 @@
         </div>
     </nav>
     <!-- navbar end -->
-    <div class="bg text-white d-flex align-items-center container-fluid  ">
+    <section class="bg text-white d-flex align-items-center justify-content-end container-fluid  ">
         <div class="bg-text container">
             <h1>
                 Reach millions <br>
@@ -96,7 +87,7 @@
             </p>
             <button class="px-4 py-2 rounded-5 fw-bold mt-3">Get in touch</button>
         </div>
-    </div>
+    </section>
     <!-- section 01 -->
     <section class="container">
         <div class="row mt-5 text-center">
@@ -172,11 +163,11 @@
             </div>
         </div>
         <!-- Row 01 -->
-        <div class="row d-flex justify-content-around align-items-center mt-5">
-            <div class="col-6 img">
+        <div class="row d-flex justify-content-around align-items-center mt-5 ">
+            <div class="col-12 col-md-6">
                 <img src="./assets/panda ads/sec-3-1.png" class="img-fluid" alt="">
             </div>
-            <div class="col-lg-6 col-md-12">
+            <div class="col-12 col-md-6">
                 <h3 class="text-black fw-bold">
                     In-app advertising
                 </h3>
@@ -187,8 +178,8 @@
             </div>
         </div>
         <!-- Row 02 -->
-        <div class="row d-flex justify-content-around align-items-center mt-5">
-            <div class="col-lg-6 col-md-12">
+        <div class="row d-flex justify-content-around align-items-center mt-5 flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6">
                 <h3 class="text-black fw-bold">
                     Off-app advertising
                 </h3>
@@ -198,16 +189,16 @@
                 </p>
                 <button class="px-4 py-2 rounded-5 about text-white fw-bold mt-3">Explore solutions</button>
             </div>
-            <div class="col-6 img">
+            <div class="col-12 col-md-6">
                 <img src="./assets/panda ads/sec-3-2.png" class="img-fluid" alt="">
             </div>
         </div>
         <!-- Row 03 -->
         <div class="row d-flex justify-content-around align-items-center mt-5">
-            <div class="col-6 img">
+            <div class="col-12 col-md-6">
                 <img src="./assets/panda ads/sec-3-3.png" class="img-fluid" alt="">
             </div>
-            <div class="col-lg-6 col-md-12">
+            <div class="col-12 col-md-6">
                 <h3 class="text-black fw-bold">
                     Strategic partnerships
                 </h3>
@@ -219,8 +210,8 @@
             </div>
         </div>
         <!-- Row 04 -->
-        <div class="row d-flex justify-content-around align-items-center mt-5">
-            <div class="col-lg-6 col-md-12">
+        <div class="row d-flex justify-content-around align-items-center mt-5 flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6">
                 <h3 class="text-black fw-bold">
                     Go beyond basic targeting with panda ads
                 </h3>
@@ -230,19 +221,189 @@
                 </p>
                 <button class="px-4 py-2 rounded-5 about text-white fw-bold mt-3">Explore solutions</button>
             </div>
-            <div class="col-6 img">
+            <div class="col-12 col-md-6">
                 <img src="./assets/panda ads/sec-3-4.png" class="img-fluid" alt="">
             </div>
         </div>
     </section>
     <!--Section 04-->
-    <section class="container-fluid">
+    <section class="container-fluid bg-light py-5">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="semi-heading">
+                    <h2 class="semi-heading fs-1">
                         Proven impact with panda ads
                     </h2>
+                </div>
+            </div>
+            <div class="row d-flex mt-4 justify-content-evenly gap-1 ">
+                <!-- card 01 -->
+                <div class="col-lg-3 col-md-6 col-12 bg-light px-0 card mb-3">
+                    <a href="" class="text-decoration-none">
+                        <img src="./assets/panda ads/sec-4-1.png" class="img-fluid" alt="">
+                        <span class="apac ms-3 ">
+                            APAC
+                        </span>
+                    </a>
+                    <a href="" class="news ">
+                        <p class="fs-3 fw-bold ms-3 mt-2">
+                            Coca-Cola leveraged retail media channels to boost sales and drive growth
+                        </p>
+                        <button class="px-4 py-2 rounded-5 about text-white fw-bold ms-2 mb-3">Read More</button>
+                    </a>
+                </div>
+                <!-- card 02 -->
+                <div class="col-lg-3 col-md-6 col-12 bg-light px-0 card mb-3">
+                    <a href="" class="text-decoration-none">
+                        <img src="./assets/panda ads/sec-4-2.png" class="img-fluid" alt="">
+                        <span class="apac ms-3 ">
+                            APAC
+                        </span>
+                    </a>
+                    <a href="" class="news ">
+                        <p class="fs-3 fw-bold ms-3 mt-2">
+                            Mars Wrigley finds the perfect audience for its new product with panda ads
+                        </p>
+                        <button class="px-4 py-2 rounded-5 about text-white fw-bold ms-2 mb-3">Read More</button>
+                    </a>
+                </div>
+                <!-- card 03 -->
+                <div class="col-lg-3 col-md-6 col-12 bg-light px-0 card mb-3">
+                    <a href="" class="text-decoration-none">
+                        <img src="./assets/panda ads/sec-4-3.png" class="img-fluid" alt="">
+                        <span class="apac ms-3 ">
+                            APAC
+                        </span>
+                    </a>
+                    <a href="" class="news ">
+                        <p class="fs-3 fw-bold ms-3 mt-2">
+                            Amazon Prime Video and foodpanda’s impressive entertainment strategy
+                        </p>
+                        <button class="px-4 py-2 rounded-5 about text-white fw-bold ms-2 mb-3">Read More</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section 05-->
+    <section class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="semi-heading fs-1">
+                        What our customers are saying
+                    </h2>
+                </div>
+            </div>
+            <div class="row text-center mt-3">
+                <div class="col-md-4 mb-3">
+                    <em>We were looking for a large APAC-wide partner with premium O&O mobile ad inventory that could
+                        connect us to our target audiences. panda ads were able to be that partner and have delivered
+                        beyond our campaign’s target KPIs. We look forward to expanding our business with them.
+                    </em>
+                    <p class="mt-2">
+                        <strong>Luke Addison</strong><br>
+                        Managing Director
+                    </p>
+                    <img src="./assets/panda ads/sec-5-1.png" class="img-fluid" width="300" alt="">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <em>
+                        As one of the goals from 2023 was to accelerate quick commerce growth through new activations
+                        and media, tapping into panda ads helped us grow our quick commerce business and deliver on our
+                        KPIs.
+                    </em>
+                    <p class="mt-2">
+                        <strong>Jayson Lopez</strong><br>
+                        Senior Media and Digital Marketing Manager
+                    </p>
+                    <img src="./assets/panda ads/sec-5-2.png" class="img-fluid" width="200" alt="">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <em>
+                        The collaboration with foodpanda through panda ads greatly enhanced our customer acquisition
+                        initiatives, by capturing our audience’s interest and fostering heightened user engagement.
+                    </em>
+                    <p class="mt-2">
+                        <strong>Jessica Faye Tan</strong><br>
+                        Head of commercial
+                    </p>
+                    <img src="./assets/panda ads/sec-5-3.png" class="img-fluid" width="200" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section 06-->
+    <div class="container-fluid py-5" style="background-color: #FDF2F7 ;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-12">
+                    <h2 class="semi-heading fs-1">Start advertising with panda ads today!</h2>
+                </div>
+                <div class="col-md-4 col-12 ">
+                  <button class="px-4 py-2 rounded-5 about text-white fw-bold">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Section 07-->
+    <section class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="semi-heading fs-1">
+                        Brand excelling with us
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-lg-2 brands">
+                    <img src="./assets/panda ads/amazon.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 col-lg-2 brands">
+                    <img src="./assets/panda ads/heinken.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 col-lg-2 brands">
+                    <img src="./assets/panda ads/netflix.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 col-lg-2 brands">
+                    <img src="./assets/panda ads/samsung.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 col-lg-2 brands">
+                    <img src="./assets/panda ads/citi.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 col-lg-2 brands">
+                    <img src="./assets/panda ads/huawei.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 col-lg-2 brands">
+                    <img src="./assets/panda ads/mastercard.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 col-lg-2 brands">
+                    <img src="./assets/panda ads/unilever.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 col-lg-2 brands">
+                    <img src="./assets/panda ads/cocacola.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 col-lg-2 brands">
+                    <img src="./assets/panda ads/pg.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 col-lg-2 brands">
+                    <img src="./assets/panda ads/standard.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 col-lg-2 brands">
+                    <img src="./assets/panda ads/visa.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 col-lg-2 brands">
+                    <img src="./assets/panda ads/mars.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 col-lg-2 brands">
+                    <img src="./assets/panda ads/cash.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 col-lg-2 brands">
+                    <img src="./assets/panda ads/zalora.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 col-lg-2 brands">
+                    <img src="./assets/panda ads/disnep.png" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
@@ -256,13 +417,13 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col ft-1">
+                <div class="col-lg-3 col-12 col-md-6 ft-1 mt-3">
                     <h5 class="text-white mb-3">Our Company</h5>
                     <a href="">About foodpanda</a>
                     <br>
                     <a href="">Privacy policy</a>
                 </div>
-                <div class="col ft-1">
+                <div class="col-lg-3 col-12 col-md-6 ft-1 mt-3">
                     <h5 class="text-white mb-3">panda ads</h5>
                     <a href="">Retail media soluton</a>
                     <br>
@@ -276,11 +437,11 @@
                     <br>
                     <a href="">Pau-Pau marketer personality quiz</a>
                 </div>
-                <div class="col ft-1">
+                <div class="col-lg-3 col-12 col-md-6 ft-1 mt-3">
                     <h5 class="text-white mb-3">Get in Touch</h5>
                     <button class="px-4 py-2 rounded-5 about text-white fw-bold mt-3">Contact Us</button>
                 </div>
-                <div class="col ft-1">
+                <div class="col-lg-3 col-12 col-md-6 ft-1 mt-3">
                     <h5 class="text-white mb-3">Follow us on</h5>
                     <a href=""><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
                 </div>
